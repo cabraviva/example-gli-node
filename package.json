@@ -1,0 +1,19 @@
+{
+  "name": "example-gli-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hello-world.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greencoder001/example-gli-node.git"
+  },
+  "author": "Green_Lab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/greencoder001/example-gli-node/issues"
+  },
+  "homepage": "https://github.com/greencoder001/example-gli-node#readme"
+}
