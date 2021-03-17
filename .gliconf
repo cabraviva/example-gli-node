@@ -1,0 +1,33 @@
+{
+  "id": "hello-world-gli-node",
+  "scripts": {
+    "install": {
+      "commands": [
+        ["move", {
+          "src": "%package/src",
+          "as": "folder",
+          "to": "%program/dist"
+        }],
+        ["makesure", {
+          "file": "https://nodejs.org/dist/v14.16.0/node-v14.16.0-win-x64.zip",
+          "is_in": "%program/dist/node.zip"
+        }],
+        ["unzip", {
+          "src": "%program/dist/node.zip",
+          "into": "%program/dist/node"
+        }],
+        ["move", {
+          "src": "%program/dist/node/node.exe",
+          "as": "file",
+          "to": "%program/dist/node.exe"
+        }],
+        ["execute", "run"]
+      ]
+    },
+    "run": {
+      "commands": [
+        ["run", "%program/dist/node.exe %program/dist/hello-world.js"]
+      ]
+    }
+  }
+}
